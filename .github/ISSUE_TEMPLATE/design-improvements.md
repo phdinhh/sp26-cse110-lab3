@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-## Describe the need for this particular improvement and why it is an improvement
+### Describe the need for this particular improvement and why it is an improvement
 
-## Describe the design details
+### Describe the design details
 
-## What particular CSS tags / concepts are needed?
+### What particular CSS tags / concepts are needed?
