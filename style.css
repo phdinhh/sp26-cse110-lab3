@@ -1,4 +1,8 @@
 /* root custom variables */
+* {
+    color: #0b1b50;
+}
+
 :root{
     --main-bg-color: #f0ecf7;
 }
@@ -68,7 +72,7 @@ h3 {
 }
 
 /* Attendance list */
-.attendance {
+section.attendance {
     /* border */
     border-style: dotted;
     border-color: azure;
@@ -85,7 +89,7 @@ h3 {
 }
 
 /* Progress checkin */
-.checkin {
+.checkin, .feature, .color-design, .task, .questions {
     /* border */
     border-style: dotted;
     border-color: azure;
@@ -99,12 +103,24 @@ h3 {
     padding: 20px 20px 20px 20px;
 
     /* max dimensions */
-    max-height: 500px;
+    max-height: 1000px;
     max-width: 70vw;
 
     /* orientation */
     /* position: fixed;
     left: 20px; */
+}
+
+br + label {
+    text-decoration: underline;
+}
+
+h2 ~ p {
+    text-decoration: underline;
+}
+
+#table-title {
+    text-decoration: underline;
 }
 
 .color-design img {
@@ -133,12 +149,15 @@ h3 {
 }
 
 /* Recordings of meeting */
-.record {
+section:has(.video-rec) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    .video-rec {
+        padding: 1px;
+    }
 }
 
 /* Signup form */
@@ -148,6 +167,10 @@ form {
     background-color: color-mix(in srgb, rgb(238, 219, 222) 50%, rgb(214, 235, 250) 70%);
     display: flex;
     flex-direction: column;
+}
+
+input[type="text"] {
+    background-color: rgb(185, 202, 235);
 }
 
 /* Signup button */
