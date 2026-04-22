@@ -155,9 +155,9 @@ section:has(.video-rec) {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    .video-rec {
+    /* .video-rec {
         padding: 1vh;
-    }
+    } */
 }
 
 /* Signup form */
