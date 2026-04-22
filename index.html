@@ -8,7 +8,12 @@
     </style>
     <title>Calendar App Meeting Notes</title>
     <meta name="description" content="The page is a copy of the meeting notes">
-    <link rel="stylesheet" href="style.css" rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico">
   </head>
   <body>
     <header>
@@ -32,32 +37,30 @@
     </header>
     <hr>
     <main>
-      <section class="logistics">
-        <section class="attendance">
-          <h2>Attendance</h2>
-          <ul>
-            <li>Present members
-              <ul>
-                <li>Lucy</li>
-                <li>Jenny</li>
-                <li>Rob</li>
-              </ul>
-            </li>
-            <li>Absent members
-              <ul>
-                <li>Julie</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section class="checkin">
-          <h2>Progress Check-in and Unfinished Business</h2>
-          <p><span>Overall</span>, our team is on track with the pre-planned milestones. </p>
-          <div>
-            <p><b>Unfinished business</b>: Choose target audience for app
-          </div>
-          <p>=> <b>Decision</b>: College students</p>
-        </section>
+      <section class="attendance">
+        <h2>Attendance</h2>
+        <ul>
+          <li>Present members
+            <ul>
+              <li>Lucy</li>
+              <li>Jenny</li>
+              <li>Rob</li>
+            </ul>
+          </li>
+          <li>Absent members
+            <ul>
+              <li>Julie</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="checkin">
+        <h2>Progress Check-in and Unfinished Business</h2>
+        <p><span>Overall</span>, our team is on track with the pre-planned milestones. </p>
+        <div>
+          <p><b>Unfinished business</b>: Choose target audience for app </p>
+        </div>
+        <p>=> <b>Decision</b>: College students</p>
       </section>
       <section class="feature">
         <h2>App Features</h2>
@@ -84,11 +87,25 @@
         <h2>Task Assignment</h2>
           <strong>IMPORTANT: Deadline is APRIL 15, 2026</strong>
           <ul>
-          <li>Lucy: Design <em>opening</em> page with Jenny</li>
-          <li>Jenny: Design <em>opening</em> page with Lucy</li>
-          <li>Rob: Design <em>calendar</em> page with Julie</li>
-          <li>Julie: Design <em>calendar</em> page with Rob</li>
-        </ul>
+          <li>Lucy: Design <div class="highlight"><em>opening</em></div> page with <div class="highlight">Jenny</div></li>
+          <li>Jenny: Design <div class="highlight"><em>opening</em></div> page with <div class="highlight">Lucy</div></li>
+          <li>Rob: Design <div class="highlight"><em>calendar</em></div> page with <div class="highlight">Julie</div></li>
+          <li>Julie: Design <div class="highlight"><em>calendar</em></div> page with <div class="highlight">Rob</div></li>
+          </ul>
+          <p style="text-decoration: underline;">Table formatting</p>
+          <div class="table">
+            <div class="header">Name</div>
+            <div class="header">Task</div>
+            <div>Lucy</div>
+            <div>Design <em>opening</em> page with Jenny</div>
+            <div>Jenny</div>
+            <div>Design <em>opening</em> page with Lucy</div>
+            <div>Rob</div>
+            <div>Design <em>calendar</em> page with Julie</div>
+            <div>Julie</div>
+            <div>Design <em>calendar</em> page with Rob</div>
+          </div>
+
       </section>
       <section class="questions">
         <h2>Questions, Clarifications, and Other</h2>
@@ -101,15 +118,23 @@
         </details>
       </section>
       <section class="record">
-        <h2>Audio Recording of Meeting</h2>
-        <audio controls src="/Recording_Mock_Meeting.m4a"></audio>
-        <h2>Video Recording of Meeting</h2>
-        <video controls width="280" height="500"><source src="Mock_video.MOV"></video>
+        <div class="audio-rec">
+          <h2>Audio Recording of Meeting</h2>
+          <audio controls src="/Recording_Mock_Meeting.m4a"></audio>
+        </div>
+        <div class="video-rec">
+          <h2>Video Recording of Meeting</h2>
+          <video controls width="280" height="500"><source src="Mock_video.MOV"></video>
+        </div>
+        <div> 
+          <h2>Transcript of Meeting</h2>
+          <p> Today we're going to talk about our development steps...</p>
+        </div>
       </section>
     </main>
     <hr>
     <footer>
-      <h3><i>Days before project end: 90 days</i></h3>
+      <h3 class="time-remind"><i>Days before project end: 90 days</i></h3>
       <form>
         <fieldset>
           <label>Username:</label>

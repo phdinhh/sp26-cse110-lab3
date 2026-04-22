@@ -1,0 +1,165 @@
+/* root custom variables */
+:root{
+    --main-bg-color: #f0ecf7;
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+        font-size: 16px;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 700px) {
+    body {font-size: 18px;}
+}
+
+@media (min-width: 1200px) {
+    body {font-size: 20px;}
+}
+
+/* General text */
+body {
+    color: black;
+    background-color: var(--main-bg-color, white);
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Title of meeting */
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #3e56a4; /* apply brown in hex code*/
+}
+
+/* Meeting topic */
+h2 {
+    color: rgb(114, 119, 193);
+}
+
+/* Meeting date */
+h3 {
+    color: hsl(226, 62%, 24%);
+}
+
+/* Agenda box */
+.agenda {
+    /* position */
+    position: static;
+    /* margin */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* padding */
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* border */
+    border-style: dashed;
+    border-color: azure;
+    border-width: 2mm;
+    border-radius: 0.5cm;
+    
+}
+
+/* Attendance list */
+.attendance {
+    /* border */
+    border-style: dotted;
+    border-color: azure;
+    border-width: 1.5mm;
+    border-radius: 0.5cm;
+
+    /* margin (outside of border) */
+    margin: 1vh 1vh 1vh 1vh;
+
+    /* padding (inside of border) */
+    padding: 5px 20px 20px 20px;
+    height: 300px;
+    width: 300px;
+}
+
+/* Progress checkin */
+.checkin {
+    /* border */
+    border-style: dotted;
+    border-color: azure;
+    border-width: 1.5mm;
+    border-radius: 0.5cm;
+
+    /* margin (outside of border) */
+    margin: 1vh 1vh 1vh 1vh;
+    
+    /* padding (inside of border) */
+    padding: 20px 20px 20px 20px;
+
+    /* max dimensions */
+    max-height: 500px;
+    max-width: 70vw;
+
+    /* orientation */
+    /* position: fixed;
+    left: 20px; */
+}
+
+.color-design img {
+    position: relative;
+    left: 10vh;
+}
+
+.highlight {
+    display: inline-block;
+    border-color: #3e56a4;
+    border-style: dashed;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header";
+    background-color: #765b83;
+}
+
+.table > div {
+    background-color: rgb(233, 223, 247);
+    padding: 0.1vh;
+    margin: 0.1vh;
+}
+
+/* Recordings of meeting */
+.record {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Signup form */
+form {
+    margin: auto;
+    color: color(display-p3 0.426 0.478 0.62);
+    background-color: color-mix(in srgb, rgb(238, 219, 222) 50%, rgb(214, 235, 250) 70%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Signup button */
+button {
+    background-color: rgb(200, 197, 234);
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: rgb(95, 79, 103);
+}
+
+button:active {
+    background-color: #da83a0;
+}
