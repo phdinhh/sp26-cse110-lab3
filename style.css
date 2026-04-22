@@ -156,7 +156,7 @@ section:has(.video-rec) {
     justify-content: space-between;
     align-items: flex-start;
     .video-rec {
-        padding: 1px;
+        padding: 1vh;
     }
 }
 
@@ -173,16 +173,22 @@ input[type="text"] {
     background-color: rgb(185, 202, 235);
 }
 
+.login {
+    &:hover {
+        background-color: #bfc8e6;
+    }
+}
+
 /* Signup button */
-button {
+.signup {
     background-color: rgb(200, 197, 234);
 }
 
-button:hover {
+.signup:hover {
     color: aliceblue;
     background-color: rgb(95, 79, 103);
 }
 
-button:active {
+.signup:active {
     background-color: #da83a0;
 }
